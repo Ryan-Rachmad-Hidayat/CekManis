@@ -1,0 +1,297 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CekManis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animated-headline.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{{ url_for('static', filename='img/logo/loder.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!--? Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="{{ url_for('index') }}">
+                                    <img src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation">
+                                            <li><a href="{{ url_for('index') }}">Halaman Utama</a></li>
+                                            <li><a href="{{ url_for('about') }}">Informasi Diabetes</a></li>
+                                            <li><a href="{{ url_for('services') }}">Cek Kesehatan</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url_for('services1') }}">Cek BMI</a></li>
+                                                    <li><a href="{{ url_for('services2') }}">Cek Diabetes</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Slider Area Start-->
+        <div class="slider-area slider-area2">
+            <div class="slider-active dot-style">
+                <!-- Slider Single -->
+                <div class="single-slider  d-flex align-items-center slider-height2">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7 col-lg-8 col-md-10 ">
+                             <div class="hero-wrapper">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".3s">Blog Seputar Diabetes</h1>
+                                    <p data-animation="fadeInUp" data-delay=".6s">Temukan informasi lengkap tentang gejala, pengobatan, pencegahan, dan banyak lagi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- Slider Area End -->
+    <!--? Blog Area Start-->
+    <section class="blog_area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mx-auto mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="{{ url_for('static', filename='/img/blog/single_blog_1.png') }}" alt="">
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="{{ url_for('blog_details1') }}">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Kenali Lebih Dalam Terkait Diabetes</h2>
+                                </a>
+                                <p>Diabetes, atau yang sering disebut "kencing manis", adalah penyakit kronis yang terjadi ketika pankreas tidak menghasilkan cukup insulin, atau ketika tubuh tidak dapat secara efektif menggunakan insulin yang dihasilkannya.</p>
+                            </div>
+                        </article>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="{{ url_for('static', filename='/img/blog/single_blog_2.png') }}" alt="">
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="{{ url_for('blog_details2') }}">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Apa Saja Sih Tipe Diabetes?</h2>
+                                </a>
+                                <p>Ada beberapa jenis diabetes seperti Diabetes Tipe 1, Diabetes Tipe 2, Diabetes Gestasional, dan 
+                                beberapa jenis diabetes lainnya yang kurang umum seperti MODY (Maturity-Onset Diabetes of the Young), Diabetes insipidus, Diabetes akibat obat-obatan, dan Diabetes pankreatogenik.</p>
+                            </div>
+                        </article>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="{{ url_for('static', filename='/img/blog/single_blog_3.png') }}" alt="">
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="{{ url_for('blog_details3') }}">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Waspadai Gejala Diabetes!</h2>
+                                </a>
+                                <p>Gejala diabetes dapat bervariasi tergantung pada jenis dan tingkat keparahan kondisi. Pada diabetes tipe 2, gejalanya bisa berkembang secara bertahap dan seringkali tidak disadari pada tahap awal.</p>
+                            </div>
+                        </article>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="{{ url_for('static', filename='/img/blog/single_blog_4.png') }}" alt="">
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="{{ url_for('blog_details4') }}">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Cegah Diabetes Mulai Sekarang</h2>
+                                </a>
+                                <p>Meskipun diabetes tipe 1 tidak dapat dicegah, diabetes tipe 2 dan diabetes gestasional seringkali dapat dicegah atau ditunda perkembangannya melalui beberapa cara.</p>
+                            </div>
+                        </article>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="{{ url_for('static', filename='/img/blog/single_blog_5.png') }}" alt="">
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="{{ url_for('blog_details5') }}">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Bahaya Komplikasi Diabetes</h2>
+                                </a>
+                                <p>Jika tidak diobati atau tidak terkontrol dengan baik, diabetes dapat menyebabkan komplikasi serius yang mempengaruhi berbagai organ tubuh.</p>
+                            </div>
+                        </article>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="{{ url_for('static', filename='/img/blog/single_blog_6.png') }}" alt="">
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="{{ url_for('blog_details6') }}">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Hidup Normal Dengan Diabetes? Bisa!</h2>
+                                </a>
+                                <p>Tujuan pengobatan diabetes adalah mengontrol kadar gula darah, mencegah komplikasi, dan meningkatkan kualitas hidup. Pendekatannya bervariasi tergantung jenis diabetes.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Area End -->
+    <!--? About Law Start-->
+    <section class="about-low-area mt-30">
+        <div class="container">
+            <div class="about-cap-wrapper">
+                <div class="row">
+                    <div class="col-xl-5  col-lg-6 col-md-10 offset-xl-1">
+                        <div class="about-caption mb-50">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle mb-35">
+                                <h2>Segera Cek Kesehatan Anda</h2>
+                            </div>
+                            <p>Masih ragu? Gunakan AI kami untuk cek risiko diabetes & hitung BMI dengan akurat.</p>
+                            <a href="{{ url_for('services') }}" class="border-btn">Cek Kesehatan</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <!-- about-img -->
+                        <div class="about-img">
+                            <div class="about-font-img">
+                                <img src="{{ url_for('static', filename='/img/gallery/about2.png') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Law End-->
+</main>
+<footer>
+    <div class="footer-wrappr section-bg3" data-background="{{ url_for('static', filename='img/gallery/footer-bg.png') }}">
+        <div class="footer-area footer-padding ">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo mb-25">
+                                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo/logo2_footer.png') }}" alt=""></a>
+                            </div>
+                            <div class="header-area">
+                                <div class="main-header main-header2">
+                                    <div class="menu-main d-flex align-items-center justify-content-start">
+                                        <!-- Main-menu -->
+                                        <div class="main-menu main-menu2">
+                                            <nav> 
+                                                <ul>
+                                                    <li><a href="{{ url_for('index') }}">Halaman Utama</a></li>
+                                                    <li><a href="{{ url_for('about') }}">Informasi Diabetes</a></li>
+                                                    <li><a href="{{ url_for('services') }}">Cek Kesehatan</a></li>
+                                                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copy-right">
+                            <p>
+                                &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Scroll Up -->
+<div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+
+<!-- Vendor Script -->
+<script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+
+<!-- jQuery, Popper, Bootstrap -->
+<script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+<!-- jQuery Mobile Menu -->
+<script src="{{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+
+<!-- Slick, Owl Carousel Plugins -->
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+
+<!-- One Page, Animated Headline -->
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/animated.headline.js') }}"></script>
+
+<!-- Nice Select, Sticky, Magnific Popup -->
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script>
+
+<!-- Contact JS -->
+<script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.form.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+
+<!-- Plugins and Main JS -->
+<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CekManis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animated-headline.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{{ url_for('static', filename='img/logo/loder.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!--? Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="{{ url_for('index') }}">
+                                    <img src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation">
+                                            <li><a href="{{ url_for('index') }}">Halaman Utama</a></li>
+                                            <li><a href="{{ url_for('about') }}">Informasi Diabetes</a></li>
+                                            <li><a href="{{ url_for('services') }}">Cek Kesehatan</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url_for('services1') }}">Cek BMI</a></li>
+                                                    <li><a href="{{ url_for('services2') }}">Cek Diabetes</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+    <!--? Slider Area Start-->
+    <div class="slider-area">
+        <div class="slider-active dot-style">
+            <!-- Slider Single -->
+            <div class="single-slider d-flex align-items-center slider-height">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10 ">
+                            <div class="hero-wrapper">
+                                <!-- Video icon -->
+                                <div class="video-icon">
+                                    <a class="popup-video btn-icon" data-animation="bounceIn" data-delay=".4s">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".3s">Deteksi Dini, Cegah Diabetes</h1>
+                                    <p data-animation="fadeInUp" data-delay=".6s">Langkah kecil hari ini bisa menyelamatkan masa depan Anda</p>
+                                    <a href="{{ url_for('about') }}" class="btn" data-animation="fadeInLeft" data-delay=".3s">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Single -->
+            <div class="single-slider d-flex align-items-center slider-height">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10 ">
+                            <div class="hero-wrapper">
+                                <!-- Video icon -->
+                                <div class="video-icon">
+                                    <a class="popup-video btn-icon" data-animation="bounceIn" data-delay=".4s">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".3s">Deteksi Dini, Cegah Diabetes</h1>
+                                    <p data-animation="fadeInUp" data-delay=".6s">Langkah kecil hari ini bisa menyelamatkan masa depan Anda</p>
+                                    <a href="{{ url_for('about') }}" class="btn" data-animation="fadeInLeft" data-delay=".3s">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!-- Slider Area End -->
+
+    <!--? About-2 Area Start -->
+    <div class="about-area2 section-padding40">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <!-- about-img -->
+                    <div class="about-img ">
+                        <img src="{{ url_for('static', filename='img/gallery/about.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="about-caption">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-35">
+                            <h2>Deteksi Dini, Hidup Lebih Baik!</h2>
+                        </div>
+                        <p class="pera-top mb-40">Cegah diabetes mulai hari ini, karena mencegah selalu lebih baik dari mengobati.</p>
+                        <p class="pera-bottom mb-30">Kami hadir untuk membantu Anda mengenali gejala dini diabetes dan memberikan edukasi kesehatan yang mudah dipahami dan bisa langsung Anda terapkan sehari-hari.</p>
+                        <div class="icon-about">
+                            <img src="{{ url_for('static', filename='img/icon/about1.svg') }}" alt="" class=" mr-20">
+                            <img src="{{ url_for('static', filename='img/icon/about2.svg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About-2 Area End -->
+
+    <section class="wantToWork-area section-bg3" data-background="{{ url_for('static', filename='img/gallery/section_bg01.png') }}">
+        <div class="container">
+            <div class="wants-wrapper w-padding2">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-7 col-lg-9 col-md-8">
+                        <div class="wantToWork-caption wantToWork-caption2">
+                            <h2>Mulai Langkah Sehatmu!</h2>
+                            <p>Cek risiko diabetes dan hitung BMI-mu sekarang. Mudah, cepat, dan gratis!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4">
+                        <a href="{{ url_for('services') }}" class="btn f-right sm-left">Cek Diabetes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--? Services Area Start -->
+    <div class="service-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <img src="{{ url_for('static', filename='img/icon/services1.svg') }}" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="{{ url_for('services1') }}">Cek BMI</a></h5>
+                            <p>Hitung BMI Anda sekarang, Berat badan ideal adalah kunci menjaga kesehatan dan kebugaran.</p>
+                            <a href="{{ url_for('services1') }}" class="plus-btn"><i class="ti-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <img src="{{ url_for('static', filename='img/icon/services2.svg') }}" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="{{ url_for('services2') }}">Cek Diabetes</a></h5>
+                            <p>Periksa risiko diabetes Anda dengan mudah dan cepat. Dapatkan hasil instan untuk langkah awal hidup sehat.</p>
+                            <a href="{{ url_for('services2') }}" class="plus-btn"><i class="ti-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Area End -->
+
+    <!--? Testimonial Area Start -->
+    <section class="testimonial-area testimonial-padding fix">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class=" col-lg-9">
+                    <div class="about-caption">
+                        <!-- Testimonial Start -->
+                        <div class="h1-testimonial-active dot-style">
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial position-relative">
+                                <div class="testimonial-caption">
+                                    <img src="{{ url_for('static', filename='img/icon/quotes-sign.png') }}" alt="" class="quotes-sign">
+                                    <p>Saya mungkin menderita diabetes, tetapi saya tidak dibatasi olehnya. Saya dapat menjalani hidup yang bahagia, sehat, dan penuh petualangan.</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center">
+                                    <div class="founder-img">
+                                        <img src="{{ url_for('static', filename='img/icon/testimonial.png') }}" alt="">
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>Ally Brooks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial position-relative">
+                                <div class="testimonial-caption">
+                                    <img src="{{ url_for('static', filename='img/icon/quotes-sign.png') }}" alt="" class="quotes-sign">
+                                    <p>Saya bertekad untuk berbagi pendekatan positif saya dan tidak membiarkan diabetes menghalangi saya menikmati hidup.</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center">
+                                    <div class="founder-img">
+                                        <img src="{{ url_for('static', filename='img/icon/testimonial.png') }}" alt="">
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>Paula Deen</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial position-relative">
+                                <div class="testimonial-caption">
+                                    <img src="{{ url_for('static', filename='img/icon/quotes-sign.png') }}" alt="" class="quotes-sign">
+                                    <p>Hidup tidak berakhir karena Anda menderita diabetes. Manfaatkan apa yang Anda miliki, bersyukurlah.</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center">
+                                    <div class="founder-img">
+                                        <img src="{{ url_for('static', filename='img/icon/testimonial.png') }}" alt="">
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>Dale Evans</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--? Testimonial Area End -->    
+
+    <!--? Blog Area Start -->
+    <section class="home-blog-area section-padding30">
+    </section>
+    <!-- Blog Area End -->
+
+    <!--? About Law Start-->
+    <section class="about-low-area mt-30">
+        <div class="container">
+            <div class="about-cap-wrapper">
+                <div class="row">
+                    <div class="col-xl-5  col-lg-6 col-md-10 offset-xl-1">
+                        <div class="about-caption mb-50">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle mb-35">
+                                <h2>Segera Cek Kesehatan Anda</h2>
+                            </div>
+                            <p>Masih ragu? Gunakan AI kami untuk cek risiko diabetes & hitung BMI dengan akurat.</p>
+                            <a href="{{ url_for('services') }}" class="border-btn">Cek Kesehatan</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <!-- about-img -->
+                        <div class="about-img">
+                            <div class="about-font-img">
+                                <img src="{{ url_for('static', filename='img/gallery/about2.png') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Law End-->
+</main>
+
+<footer>
+    <div class="footer-wrappr section-bg3" data-background="{{ url_for('static', filename='img/gallery/footer-bg.png') }}">
+        <div class="footer-area footer-padding ">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo mb-25">
+                                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo/logo2_footer.png') }}" alt=""></a>
+                            </div>
+                            <div class="header-area">
+                                <div class="main-header main-header2">
+                                    <div class="menu-main d-flex align-items-center justify-content-start">
+                                        <!-- Main-menu -->
+                                        <div class="main-menu main-menu2">
+                                            <nav> 
+                                                <ul>
+                                                    <li><a href="{{ url_for('index') }}">Halaman Utama</a></li>
+                                                    <li><a href="{{ url_for('about') }}">Informasi Diabetes</a></li>
+                                                    <li><a href="{{ url_for('services') }}">Cek Kesehatan</a></li>
+                                                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copy-right">
+                            <p>
+                                &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Scroll Up -->
+<div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+<script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/animated.headline.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/gijgo.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/hover-direction-snake.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.form.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
