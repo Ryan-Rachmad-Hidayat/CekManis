@@ -154,7 +154,7 @@
                             <h2>Segera Cek Kesehatan Anda</h2>
                         </div>
                         <p>Masih ragu? Gunakan AI kami untuk cek risiko diabetes & hitung BMI dengan akurat.</p>
-                        <a href="services.html" class="border-btn">Cek Kesehatan</a>
+                        <a href="{{ url_for('services') }}" class="border-btn">Cek Kesehatan</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -180,7 +180,7 @@
                         <div class="single-footer-caption mb-50">
                             <!-- logo -->
                             <div class="footer-logo mb-25">
-                                <a href="index.html"><img src="{{ url_for('static', filename='img/logo/logo2_footer.png') }}" alt=""></a>
+                                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo/logo2_footer.png') }}" alt=""></a>
                             </div>
                             <d iv class="header-area">
                                 <div class="main-header main-header2">
@@ -189,11 +189,10 @@
                                         <div class="main-menu main-menu2">
                                             <nav> 
                                                 <ul>
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="services.html">Services</a></li>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                                                    <li><a href="{{ url_for('about') }}">About</a></li>
+                                                    <li><a href="{{ url_for('services') }}">Services</a></li>
+                                                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
                                                 </ul>
                                             </nav>
                                         </div>
